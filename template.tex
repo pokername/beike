@@ -1,0 +1,74 @@
+\documentclass{<++>}
+\usepackage[UTF8]{ctex}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{arrows,shapes}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{tikzmark}
+\usetikzlibrary{calc}
+\usepackage{tcolorbox}
+\usepackage{wrapfig}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{ifthen}
+\usepackage{siunitx}
+
+
+% \bibliographystyle{plain}
+
+\newcommand{\highlight}[2]{\colorbox{#1!17}{#2}}
+
+\newenvironment{sikao}%
+{\begin{center} 思考讨论 \end{center}%
+\begin{quotation}}
+{\end{quotation}}
+
+\newboolean{isDemo}
+\setboolean{isDemo}{true} %打印时设置为false
+
+\ifthenelse{\boolean{isDemo}}
+{
+  \definecolor{mc}{RGB}{255,0,255} %品红
+  \definecolor{tc}{RGB}{0,100,0} % 深绿色
+}
+{
+  \definecolor{mc}{gray}{0.5}
+  \definecolor{tc}{gray}{0.2}
+}
+
+\title{<++>}
+\author{<++>}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% \tableofcontents
+%
+% \listoftables
+
+<++>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% \bibliography{/home/diamond/Documents/latex/cool}
+
+\end{document}
